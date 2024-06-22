@@ -95,7 +95,6 @@ y_pred = model.predict(X_test_vect)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print(classification_report(y_test_encoded, y_pred, target_names=le.classes_))
 
-# Save the Model (Optional)
 # Save the trained model and vectorizer for future use.
 
 # Save the model
@@ -104,7 +103,6 @@ joblib.dump(model, 'emotion_classifier_model.pkl')
 # Save the vectorizer
 joblib.dump(vectorizer, 'tfidf_vectorizer.pkl')
 
-#  Load the Model 
 # Load the model and vectorizer to make predictions on new data.
 
 # Load the model
